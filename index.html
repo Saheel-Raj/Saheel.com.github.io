@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to my website</title>
+    <link rel="shortcut icon" href="png/shortcut icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/stle.css">
+    <link rel="stylesheet" href="css/box.css">
+
+    <style>
+        .tag {
+            display: flex;
+            justify-content: center;
+        }
+
+        body {
+            background-color: #222;
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+    <!--preloader for website--v-->
+    <div id="loader"></div>
+    <!--preloader for website--^-->
+
+    <!--Navigation bar-->
+    <div id="loader"></div>
+    <nav class="navbar">
+        <div class="content">
+            <div class="logo"><a href="/index.html">Saheel.com</a></div>
+            <ul class="menulist">
+                <div class="icon cancelbtn">
+                    <i calss="fas fa-times"></i>
+                </div>
+                <li><a href="/html/about.html">About</a></li>
+                <li><a href="/html/news.html">News</a></li>
+                <li><a href="/html/credit.html">Credit</a></li>
+                <li><a href="/Game/select.html">Game</a></li>
+            </ul>
+            <div class="icon menubtn">
+                <i calss="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav><br><br><br><br>
+    <!--Navigation bar-->
+
+    <section>
+    </section>
+
+    <!--Main body tag-->
+    <div class="tag">
+        <div class="wrap">
+            <div class="container2">
+                <div class="box2">
+                    <img src="png/information.png">
+                    <h3>About</h3>
+                    <p>Comming Soon!</p>
+                    <a href="html/about.html" class="btn2">Read More</a>
+                </div>
+                <div class="box2">
+                    <img src="png/newspaper-folded.png">
+                    <h3>News</h3>
+                    <p>Comming Soon!</p>
+                    <a href="html/news.html" class="btn2">Read More</a>
+                </div>
+                <div class="box2">
+                    <a href="Game/select.html"><img src="png/game.png"></a>
+                    <h3>Game</h3>
+                    <p>Comming Soon!</p>
+                    <a href="Game/select.html" class="btn2">Play Game</a>
+                </div>
+                <div class="box2">
+                    <a href="html/credit.html"><img src="png/credit (1).png"></a>
+                    <h3>Credit</h3>
+                    <p>Comming Soon!</p>
+                    <a href="html/credit.html" class="btn2">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div><br><br><br>
+    <!--Main body tag-->
+
+    <!--Footer degisn-->
+    <footer>
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="html/about.html">About</a></li>
+            <li><a href="html/news.html">News</a></li>
+            <li><a href="Game/select.html">Game</a></li>
+            <li><a href="html/credit.html">Credit</a></li>
+        </ul>
+        <p>©️Copyright Saheel.com | All Rights Reserved</p>
+    </footer><br><br>
+    <!--Footer degisn-->
+
+
+    <!--java script start-->
+    <script>
+        const body = document.querySelector("body");
+        const navbar = document.querySelector(".navbar");
+        const menu = document.querySelector(".menulist");
+        const menubtn = document.querySelector(".menubtn");
+        const cancelbtn = document.querySelector(".cancelbtn");
+        menubtn.onclick = () => {
+            menu.classList.add("active");
+            menubtn.classList.add("hide");
+            menubtn.classList.add("disabledScrool");
+        }
+        cancelbtn.onclick = () => {
+            menu.classList.remove("active");
+            menubtn.classList.remove("hide");
+            menubtn.classList.remove("disabledScrool");
+        }
+
+        window.onscroll = () => {
+            this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky")
+        }
+        /**/
+    </script>
+
+    <!--java script end-->
+
+</body>
+
+</html>
+</body>
+
+</html>

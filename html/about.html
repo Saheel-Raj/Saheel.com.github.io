@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me and others</title>
+    <link rel="shortcut icon" href="/png/shortcut icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/stle.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+        .bode {
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="loader"></div>
+    <div class="noti">
+
+
+        <div class="navbar">
+            <div class="content">
+                <div class="logo"><a href="/index.html">Saheel.com</a></div>
+                <ul class="menulist">
+                    <div class="icon cancelbtn">
+                        <i calss="fas fa-times"></i>
+                    </div>
+                    <li><a href="/html/about.html">About</a></li>
+                    <li><a href="/html/news.html">News</a></li>
+                    <li><a href="/html/credit.html">Credit</a></li>
+                    <li><a href="/Game/select.html">Game</a></li>
+                </ul>
+                <div class="icon menubtn">
+                    <i calss="fas fa-bars"></i>
+                </div>
+            </div>
+        </div><br><br><br><br>
+        <div id="bode">
+            <h1 align="center">About myself and others</h1>
+            <hr>
+            <u>
+                <h2 align="center">Introduce myself</h2>
+            </u>
+            <p>Comming Soon!
+            </p><br>
+            <div>
+                <h3>Share your opinion to improve my productivity.</h3>
+                <hr>
+                <a href="https://outlook.live.com/mail/0/compose" target="">
+                    <img src="/png/outlook.png" alt="about" width="110px"></a><br>
+                Outlook- Saheel_Raj_Kumar@outlook.com <br>
+                Gmail- blockeeb@gmail.com
+            </div>
+        </div>
+        <footer>
+            <div class="waves">
+                <div class="wave" id="wave1"></div>
+                <div class="wave" id="wave2"></div>
+                <div class="wave" id="wave3"></div>
+                <div class="wave" id="wave4"></div>
+            </div>
+            <ul class="menu">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/html/about.html">About</a></li>
+                <li><a href="/html/news.html">News</a></li>
+                <li><a href="/Game/select.html">Game</a></li>
+                <li><a href="/html/credit.html">Credit</a></li>
+                <p>©️Saheel.com | All Rights Reserved</p>
+            </ul>
+        </footer>
+
+
+
+        <script>
+            const body = document.querySelector("body");
+            const navbar = document.querySelector(".navbar");
+            const menu = document.querySelector(".menulist");
+            const menubtn = document.querySelector(".menubtn");
+            const cancelbtn = document.querySelector(".cancelbtn");
+            menubtn.onclick = () => {
+                menu.classList.add("active");
+                menubtn.classList.add("hide");
+                menubtn.classList.add("disabledScrool");
+            }
+            cancelbtn.onclick = () => {
+                menu.classList.remove("active");
+                menubtn.classList.remove("hide");
+                menubtn.classList.remove("disabledScrool");
+            }
+
+            window.onscroll = () => {
+                this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky")
+            }
+        </script>
+        <script>
+            var preload = document.getElementById("loader");
+
+            window.addEventListener("load", function () {
+                preload.style.display = "none";
+            })
+        </script>
+</body>
+
+</html>
